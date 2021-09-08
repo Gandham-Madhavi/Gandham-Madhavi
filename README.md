@@ -1,3 +1,8 @@
+#Screenshots
+![homePage](https://user-images.githubusercontent.com/87770098/132525099-f0a3bac4-ed6f-41dd-88ff-66ca6140d1a8.PNG)
+![createUserPage](https://user-images.githubusercontent.com/87770098/132525056-4475cbd1-24de-45a2-b4ea-363ce4e312ad.PNG)
+![editUserPage](https://user-images.githubusercontent.com/87770098/132525074-34f1f8be-8516-4209-922e-c296829ae814.PNG)
+![AfterEditPage](https://user-images.githubusercontent.com/87770098/132525023-fda85514-7906-43e6-beff-115a86ed61f4.PNG)
 # CustomerApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
