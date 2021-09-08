@@ -1,0 +1,14 @@
+#submitBtn {
+  margin: auto;
+  text-align: center;
+  display: flex;
+}
+
+.has-error {
+  color: red;
+  border-color: red;
+}
+
+.has-error-control {
+  border: 1px solid red;
+}

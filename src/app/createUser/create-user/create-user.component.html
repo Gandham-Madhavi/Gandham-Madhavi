@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <h1 style="text-align: center;">{{headerTxt}}</h1>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-12 d-flex p-0">
+      <div class="col-md-6 p-0">
+        <div class="mb-3" class="form-group">
+          <label for="name" class="control-label"><b>Name</b></label>
+          <input type="text" class="form-control" formControlName="name" id="name" name="name"
+            placeholder="Enter User Name.">
+        </div>
+        <div class="mb-3" class="form-group">
+          <label for="email" class="control-label"> <b>Email</b></label>
+          <input type="email" class="form-control" formControlName="email" id="email" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="phone" class="form-label"><b>Mobile</b></label>
+          <input type="text" class="form-control" formControlName="phone" id="phone" placeholder="Enter Mobile Number">
+        </div>
+        <div class="mb-3">
+          <label for="website" class="form-label"><b>Website</b></label>
+          <input type="text" class="form-control" formControlName="website" id="website"
+            placeholder="Enter Website Address">
+        </div>
+      </div>
+    </div>
+    <button id="submitBtn" [disabled]="this.allFieldsFilled" class="btn btn-primary">{{btnTxt}}</button>
+  </form>
+</div>
+<app-card-list [listOfCards]="listOfForms" [updateDetails]="updateDone" (isCardEmitted)="onCardEmit($event)">
+</app-card-list>

@@ -1,0 +1,25 @@
+<div class="container-fluid" *ngIf="isCardClicked || isUpdated">
+  <div class="col-md-12">
+    <h5>List of Forms</h5>
+  </div>
+  <div class="row">
+    <div style="margin: 1rem" *ngFor="let form of listOfCards">
+      <div class="card" (click)="onCardClick(form)">
+        <div class="col-md-12 d-flex">
+          <div class="col-md-10 p-0">
+            <h6 class="card-text" style="line-height: 3; font-size: 16px;">{{form.name}}</h6>
+          </div>
+          <div class="col-md-2">
+            <i class="fa fa-trash fa-lg offset-11" style="margin-top: 1rem;color:red;cursor: pointer;"
+              (click)="deleteIcon(form)"></i>
+          </div>
+        </div>
+        <div class="card-body" style="padding-top: 0">
+          <span class="card-text">{{form.email}}</span><br />
+          <span class="card-text">{{form.phone}}</span><br />
+          <span class="card-text">{{form.website}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
